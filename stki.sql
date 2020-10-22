@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Okt 2020 pada 06.32
+-- Waktu pembuatan: 22 Okt 2020 pada 08.04
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.1
 
@@ -821,6 +821,33 @@ INSERT INTO `stopword` (`stopword`) VALUES
 ('yakin'),
 ('yakni'),
 ('yang');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tfidf`
+--
+
+CREATE TABLE `tfidf` (
+  `id` varchar(5) NOT NULL,
+  `no` varchar(5) NOT NULL,
+  `kata` varchar(50) NOT NULL,
+  `freq` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tfidf`
+--
+
+INSERT INTO `tfidf` (`id`, `no`, `kata`, `freq`) VALUES
+('1', '1', 'this', '1'),
+('1', '2', 'is', '1'),
+('1', '3', 'a', '2'),
+('1', '4', 'sample', '1'),
+('2', '1', 'this', '1'),
+('2', '2', 'is', '1'),
+('2', '3', 'another', '2'),
+('2', '4', 'example', '3');
 
 -- --------------------------------------------------------
 
